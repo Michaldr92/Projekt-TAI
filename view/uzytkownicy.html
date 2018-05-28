@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Helpdesk IT">
+
+    <title>Helpdesk IT</title>
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400&subset=latin,latin-ext'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mainrwd.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="sidebar">
+            <div class="semifluid-layout">
+                <div class="button-menu">
+                    <i class="fa fa-navicon"></i>
+                </div>
+                <div class="sidebar-brand">
+                     <a href="/helpdeskit/view/admin.html">Administrator</a>
+                </div>
+                <nav class="sidebar-navigation">
+                    <ul>
+                        <li>
+                            <a href="/helpdeskit/view/uzytkownicy.html">
+                                <i class="fa fa-user"></i>
+                                <span>Użytkownicy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/helpdeskit/view/sprzet.html">
+                                <i class="fa fa-wrench"></i>
+                                <span>Sprzęt IT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/helpdeskit/view/zgloszenie.html">
+                                <i class="fa fa-tasks"></i>
+                                <span>Zgłoszenia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/helpdeskit/view/index.html">
+                                <i class="fa fa-share-alt"></i>
+                                <span>Wyloguj</span>
+                            </a>
+                        </li>						
+                    </ul>
+                </nav>
+                <div class="sidebar-copyrights">
+                    &copy; Projekt wykonał Michał Drop
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="main-header navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-xs-6">
+                            <h2 id="admin">Użytkownicy</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content container-fluid">
+                <div class="row">
+                </div>
+
+                <div class="col-xs-1 col-lg-1 col-md-1">
+                </div>
+                <div class="col-lg-10 col-md-10 col-xs-10">
+                    <div class="panel-window" style="margin-top: 10%;">
+                        <div class="panel-window-header">
+                            <h2 class="panel-window-heading">
+                                <center><b>Użytkownicy - operacje</b></center>
+                            </h2>
+                        </div>
+                        <div class="panel-window-body">
+							<div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Imię *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Imię *" required="required" data-error="Imię jest wymagane.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                         <label for="form_lastname">Nazwisko *</label>
+                                         <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Nazwisko *" required="required" data-error="Nazwisko jest wymagane.">
+                                         <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Adres email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Adres email *" required="required" data-error="Adres email jest wymagany.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Stanowisko Pracy</label>
+										<input id="form_stanowisko" type="text" name="stanowisko" class="form-control" placeholder="Stanowisko pracy *" required="required" data-error="Stanowisko pracy jest wymagany.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Login *</label>
+                                        <input id="form_name" type="text" name="login" class="form-control" placeholder="Login *" required="required" data-error="Login jest wymagane.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                         <label for="form_password">Hasło *</label>
+                                         <input id="form_password" type="password" name="haslo" class="form-control" placeholder="Hasło *" required="required" data-error="Hasło jest wymagane.">
+                                         <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="form_umowa">Typ umowy *</label>
+                                        <input id="form_umowa" type="text" name="umowa" class="form-control" placeholder="Umowa *" required="required" data-error="Umowa jest wymagane.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                         <label for="form_lokalizacja">Lokalizacja *</label>
+                                         <input id="form_lokalizacja" type="text" name="lokalizacja" class="form-control" placeholder="Lokalizacja *" required="required" data-error="Lokalizacja jest wymagane.">
+                                         <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="form_dzial">Dział *</label>
+                                        <input id="form_dzial" type="text" name="dzial" class="form-control" placeholder="Dział *" required="required" data-error="Dział jest wymagane.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <div class="form-group">
+                                         <label for="form_przelozony">Przełożony *</label>
+                                         <input id="form_przelozony" type="text" name="przelozony" class="form-control" placeholder="Przełożony *" required="required" data-error="Przełożony jest wymagane.">
+                                         <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+							<br>
+							<div class = "row">
+							         <div class="col-lg-12 col-md-12 col-xs-12">
+                                     <input type="submit" class="btn btn-success btn-send" value="Dodaj użytkownika" style = "width: 120px;">
+									 <input type="submit" class="btn btn-success btn-send" value="Edytuj użytkownika" style = "width: 120px;">
+									 <input type="submit" class="btn btn-success btn-send" value="Usuń użytkownika" style = "width: 120px;">
+                                 </div>   
+							</div>
+                        </div>
+                    </div>					
+					 <div class="panel-window">
+                        <div class="panel-window-header">
+                            <h2 class="panel-window-heading">
+                                <center><b>Użytkownicy</b></center>
+                            </h2>
+                        </div>
+                        <div class="panel-window-body">
+						<br>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+								  <tr>
+									<th>Imię</th>
+									<th>Nazwisko</th>
+									<th>Email</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>Jan</td>
+									<td>Kowalski</td>
+									<td>jkowalski@test.pl</td>
+								  </tr>
+								  <tr>
+									<td>Marta</td>
+									<td>Nowak</td>
+									<td>mnowak@test.pl</td>
+								  </tr>
+								  <tr>
+									<td>Konrad</td>
+									<td>BezNazwisko</td>
+									<td>kbeznawiska@test.pl/td>
+								  </tr>
+								</tbody>
+							  </table>
+							  </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1 col-md-1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

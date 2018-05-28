@@ -1,0 +1,257 @@
+
+@media all and (min-width: 991px) {
+
+    nav.sidebar-navigation {
+        display: block !important;
+    }
+
+}
+
+@media all and (max-width: 990px) and (min-width: 781px) {
+
+    h3{
+        font-size: 10px;
+    }
+
+    #sidebar {
+        width: 76px;
+    }
+
+    .semifluid-layout {
+        width: 76px;
+    }
+
+    .sidebar-user-info  {
+        display: none;
+    }
+
+    #sidebar .sidebar-brand a {
+        overflow: hidden;
+
+        text-indent: -666px;
+    }
+
+    #sidebar .sidebar-brand a {
+        width: 11px;
+        margin-left: 12px;
+    }
+
+    nav.sidebar-navigation {
+        display: block !important;
+    }
+
+    #sidebar .sidebar-navigation > ul > li > a > span {
+        display: none;
+    }
+
+    #sidebar .sidebar-navigation ul.sub-menu li.dropdown-header {
+        display: block;
+        padding-left: 10px;
+
+        background: transparent;
+    }
+
+    .sidebar-navigation li.parent ul.sub-menu {
+        width:250px;
+        display: none !important;
+        position: absolute;
+        top:0;
+        right:-260px;
+
+        background-color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+
+        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.6);
+    }
+
+    .sidebar-navigation li.parent:hover ul.sub-menu {
+        display: block !important;
+    }
+
+
+
+    .sidebar-navigation li.parent:hover ul.sub-menu::before {
+        position: absolute;
+        left: -10px;
+        top: 0;
+
+        content: '\f0d9';
+        font-family: FontAwesome;
+        font-size: 25px;
+        color: #FFF;
+    }
+
+    #sidebar .sidebar-navigation li.parent ul.sub-menu a {
+        color: #555;
+
+        font-size: 11px;
+    }
+
+    #sidebar .sidebar-navigation li.parent ul.sub-menu li a:hover {
+        background-color: #3d566d;
+        color: #FFF;
+    }
+
+    #sidebar .sidebar-navigation ul li ul.sub-menu li.dropdown-header a,
+    #sidebar .sidebar-navigation ul li ul.sub-menu li.dropdown-header a:hover {
+        padding: 0;
+
+        background: #FFF;
+    }
+
+    .sidebar-navigation li.parent ul.sub-menu li.dropdown-header a span,
+    .sidebar-navigation li.parent ul.sub-menu li.dropdown-header a i {
+        color: #3d566d;
+    }
+
+    #canvas{
+        display:none;
+    }
+
+    #umiejetnosci-main{
+        height: 1430px;
+    }
+}
+
+@media all and (max-width: 780px) {
+
+    .semifluid-layout {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .sidebar-user-info  {
+        display: none;
+    }
+
+    #sidebar {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-bottom: 0;
+
+        z-index: 4070;
+    }
+
+    #sidebar .sidebar-brand a {
+        width: 199px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    #umiejetnosci-main{
+        height: 1430px;
+    }
+
+    .button-menu {
+        position: absolute;
+        display: inline-block;
+        height: 38px;
+        right: 20px;
+        top:30px;
+        padding:8px 8px;
+        z-index: 4080;
+        font-size: 24px;
+        line-height: 24px;
+        color:#FFF;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.15);
+
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        border-radius:3px;
+    }
+
+    nav.sidebar-navigation,
+    #sidebar .sidebar-copyrights {
+        display: none;
+    }
+
+    #sidebar .sidebar-navigation > ul > li > a > span {
+        display: inline-block;
+    }
+
+    .main-header .user-area {
+        float: left;
+    }
+
+    .user-area .navbar-right {
+        float: left !important;
+    }
+
+    .user-area .nav {
+        float: right;
+    }
+
+    .nav > li {
+        display: inline-block;
+        float: left;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        position: absolute;
+        left: auto;
+        right: 0;
+        width: 280px;
+
+        background-color: #FFF;
+
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    }
+
+    #canvas{
+        display:none;
+    }
+}
+
+ @media screen and (max-width: 480px) {
+    h3 {
+        font-size: 12px;
+    }
+
+    .flat-panel{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #canvas{
+        display:none;
+    }
+
+    #umiejetnosci-main{
+        height: 1430px;
+    }
+
+     @media screen and (max-width: 360px) {
+    h3 {
+        font-size: 12px;
+    }
+
+    .flat-panel{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #canvas{
+        display:none;
+    }
+}

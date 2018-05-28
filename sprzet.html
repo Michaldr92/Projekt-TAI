@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Helpdesk IT">
+
+    <title>Helpdesk IT</title>
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400&subset=latin,latin-ext'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mainrwd.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="sidebar">
+            <div class="semifluid-layout">
+                <div class="button-menu">
+                    <i class="fa fa-navicon"></i>
+                </div>
+                <div class="sidebar-brand">
+                     <a href="/helpdeskit/admin.html">Administrator</a>
+                </div>
+                <nav class="sidebar-navigation">
+                    <ul>
+                        <li>
+                            <a href="/helpdeskit/uzytkownicy.html">
+                                <i class="fa fa-user"></i>
+                                <span>Użytkownicy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/helpdeskit/sprzet.html">
+                                <i class="fa fa-wrench"></i>
+                                <span>Sprzęt IT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/helpdeskit/zgloszenie.html">
+                                <i class="fa fa-tasks"></i>
+                                <span>Zgłoszenia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/helpdeskit/index.html">
+                                <i class="fa fa-share-alt"></i>
+                                <span>Wyloguj</span>
+                            </a>
+                        </li>						
+                    </ul>
+                </nav>
+                <div class="sidebar-copyrights">
+                    &copy; Projekt wykonał Michał Drop
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="main-header navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-xs-6">
+                            <h2 id="admin">Sprzęt</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content container-fluid">
+                <div class="row">
+                </div>
+
+                <div class="col-xs-1 col-lg-1 col-md-1">
+                </div>
+                <div class="col-lg-10 col-md-10 col-xs-10">
+                    <div class="panel-window" style="margin-top: 10%;">
+                        <div class="panel-window-header">
+                            <h2 class="panel-window-heading">
+                                <center><b>Sprzęt</b></center>
+                            </h2>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="panel-window-body">
+						<form id="contact-form" role="form">
+                        <div class="controls">
+                            <div class="row">
+							<div class="col-lg-2 col-md-2 col-xs-1">
+							</div>
+                                <div class="col-lg-8 col-md-8 col-xs-10">
+                                    <div class="form-group">
+                                        <label for="form_name">Nazwa sprzętu</label>
+                                        <input id="form_name" type="text" name="login" class="form-control" placeholder="Nazwa" required="required" data-error="Temat jest wymagany.">
+                                        <div class="help-block with-errors"></div>
+										<label for="form_name">Typ sprzętu</label>
+                                        <select class="form-control">
+										  <option>Telefon</option>
+										  <option>Laptop</option>
+										  <option>Komputer</option>
+										  <option>Monitor</option>
+										  <option>Klawiatura i Mysz</option>
+										</select>
+                                        <div class="help-block with-errors"></div>
+										<label for="form_name">Model sprzętu</label>
+                                        <input id="form_name" type="text" name="login" class="form-control" placeholder="Model" required="required" data-error="Temat jest wymagany.">
+                                        <div class="help-block with-errors"></div>
+										<label for="form_name">Numer seryjny</label>
+                                        <input id="form_name" type="text" name="login" class="form-control" placeholder="Numer seryjny" required="required" data-error="Temat jest wymagany.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+								<div class="col-lg-2 col-md-2 col-xs-1">
+							</div>
+							</div>
+                            <br>
+							<div class = "row">
+							         <div class="col-lg-12 col-md-12 col-xs-12">
+                                     <input type="submit" class="btn btn-success btn-send" value="Dodaj sprzęt" style = "width: 120px;">
+									 <input type="submit" class="btn btn-success btn-send" value="Edytuj sprzęt" style = "width: 120px;">
+									 <input type="submit" class="btn btn-success btn-send" value="Usuń sprzęt" style = "width: 120px;">
+                                 </div>   
+							</div>
+                        </div>
+                </form> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1 col-md-1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
